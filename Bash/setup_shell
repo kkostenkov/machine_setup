@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cat ./zprofile_source >> ~/.zprofile

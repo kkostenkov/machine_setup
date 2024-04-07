@@ -19,3 +19,7 @@ alias  gg+='git log --oneline --abbrev-commit --graph --decorate --color'
 
 # Faster cd
 CDPATH='.:/Users/kirillkostenkov/Documents/Repos'
+
+# android development
+export ANDROID_HOME=~/Library/Android/sdk
+alias run-emulator='emulator -avd EmulatorToRunFromConsole'

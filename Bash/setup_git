@@ -1,0 +1,4 @@
+#!/bin/bash
+
+git config --global rerere.enabled true
+git diff --diff-algorithm=histogram

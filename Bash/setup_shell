@@ -3,3 +3,8 @@
 cat ./zprofile_source >> ~/.zprofile
 
 brew install stats
+
+machineName=yeoman
+sudo scutil --set ComputerName $machineName
+sudo scutil --set LocalHostName $machineName
+sudo scutil --set HostName $machineName

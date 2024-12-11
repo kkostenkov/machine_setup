@@ -5,4 +5,4 @@ Rider
 Fork  
 Zoom  
 [Vysor](https://www.vysor.io/)  
-[Stats](https://github.com/exelban/stats)
+[Stats](https://github.com/exelban/stats) // installed from bash setup script

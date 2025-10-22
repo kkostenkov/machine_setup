@@ -9,3 +9,4 @@ Zoom
 [Cap](https://github.com/CapSoftware/Cap) // free loom alternative. records mac system sounds  
 [Cleaner-one](https://apps.apple.com/es/app/cleaner-one-disk-clean/id1473079126?l=en-GB&mt=12)  
 [Localsend](https://localsend.org/)  
+[GrandPerspective](https://sourceforge.net/projects/grandperspectiv/) // disk space on Mac

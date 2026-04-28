@@ -11,3 +11,4 @@ Zoom
 [Localsend](https://localsend.org/)  
 [GrandPerspective](https://sourceforge.net/projects/grandperspectiv/) // disk space on Mac  
 [HandBrake](https://handbrake.fr/downloads.php) // video compression
+[Cotypist]() // auto completion while typing

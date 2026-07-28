@@ -29,5 +29,5 @@ alias run-emulator='emulator -avd EmulatorToRunFromConsole'
 togif() {
   local in="$1"
   local out="${in%.*}.gif"
-  ffmpeg -i "$in" -vf "fps=10,scale=600:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -y "$out"
+  ffmpeg -i "$in" -vf "fps=10,scale=600:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse=dither=none" -y "$out"
 }

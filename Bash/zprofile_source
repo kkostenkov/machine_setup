@@ -24,3 +24,10 @@ CDPATH='.:/Users/kirillkostenkov/Documents/Repos'
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 alias run-emulator='emulator -avd EmulatorToRunFromConsole'
+
+# video -> gif, output next to input
+togif() {
+  local in="$1"
+  local out="${in%.*}.gif"
+  ffmpeg -i "$in" -vf "fps=15,scale=800:-1:flags=lanczos" -y "$out"
+}

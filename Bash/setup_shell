@@ -3,6 +3,7 @@
 cat ./zprofile_source >> ~/.zprofile
 
 brew install stats
+brew install ffmpeg
 
 machineName=yeoman
 sudo scutil --set ComputerName $machineName

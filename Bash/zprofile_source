@@ -25,9 +25,9 @@ export ANDROID_HOME=~/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools
 alias run-emulator='emulator -avd EmulatorToRunFromConsole'
 
-# video -> gif, output next to input
+# video -> gif, output next to input (2-pass palette for smaller/better gif)
 togif() {
   local in="$1"
   local out="${in%.*}.gif"
-  ffmpeg -i "$in" -vf "fps=15,scale=800:-1:flags=lanczos" -y "$out"
+  ffmpeg -i "$in" -vf "fps=10,scale=600:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -y "$out"
 }
